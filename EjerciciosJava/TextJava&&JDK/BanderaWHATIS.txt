@@ -1,0 +1,1 @@
+Bandera es una variable a la que asignamos uno de varios valores para indicar, el estado o condicion del programa en un momento determinado

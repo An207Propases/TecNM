@@ -1,0 +1,31 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.ejecicio2023;
+import java.util.Scanner;
+
+/**
+ *
+ * @author conor
+ */
+public class Ejecicio2023 {
+
+    public static void main(String[] args) {
+        Scanner leer =new Scanner(System.in);
+        
+        int numero;
+        String texto;
+         System.out.println("Ingresar numero");
+         texto= leer.next();
+         System.out.println(texto.charAt(0));
+         System.out.println(texto.charAt(1));         
+         System.out.println(texto.charAt(2));
+         System.out.println(texto.charAt(3));
+        
+        
+      
+
+        
+    } //main
+}

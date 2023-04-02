@@ -1,0 +1,7 @@
+el uso de mas en las cadenas implica concatenar  caracters       		String	cadena += car
+
+
+al concatenar un numero a una cadena el numero es automaticamente convertido a cadena para ser pegado
+
+
+subString

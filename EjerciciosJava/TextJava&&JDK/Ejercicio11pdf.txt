@@ -1,0 +1,51 @@
+// problema  ralizar la inscripcion de N alumnos (N entre 5 y 50) (aleatorio entre 1200 y 1500 $)pregunatar si si alcanza y dar vale (se adeudan )
+package problemaclase;
+
+import java.util.Scanner;
+import java.util.Random;
+
+/**
+ *
+ * @author conor
+ */
+public class Problemaclase {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+    int x,cont=0,acum=0,acumpar=0,cif;
+    
+       // Random aleat = new Random();
+          Scanner leer = new Scanner(System.in);
+          
+          
+        System.out.println("Ingresar valor ");
+        x=leer.nextInt();
+        
+        do{   
+            cif=x%10;
+         
+            if(x % 2 !=0 ){
+                acum+=cif;
+            }
+            else {
+                acumpar+=cif;
+             
+            }
+         
+            x/=10; //actualizacion
+            cont++;
+        }while(cont==x && x !=0);
+        
+        
+        if(acumpar==acum){
+        System.out.println("YES!");
+        }
+        else{
+            System.out.println("Nop!");
+        }
+        leer.close();
+    }//main
+    
+}

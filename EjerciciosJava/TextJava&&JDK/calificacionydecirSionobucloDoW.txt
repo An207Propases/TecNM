@@ -1,0 +1,93 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+// autores Gutierrez Flores Kenneth && Ana Karina O.
+
+package com.mycompany.ejecicio2023;
+import java.util.Scanner;
+
+//import java.util.Random; 
+
+/**
+ *
+ * @author conor
+ */
+//numero del 0 al 100 imprime 7 valores al azar y dice cual es menor y cual es mayor y la suma 
+public class Ejecicio2023 {
+
+    public static void main(String[] args ){
+ 
+// va adentro del case(n) o estructura
+
+   int  prom,calif,cont=0,suma=0,aprob=0,reprob=0; 
+   char select='s'; // para que entre al ciclo
+      
+
+          Scanner leer = new Scanner(System.in);
+        
+   do{
+    System.out.println("Ingresar calificación entera 0-100"); // valores positivos
+    calif=leer.nextInt();
+    
+    
+    if(calif>=96 && calif<=100){
+           System.out.println("Excelente");
+        
+    }
+    else if(calif>=91 && calif<=95)
+    {
+       System.out.println("Muy Bien");
+       
+   }else if(calif>=86 && calif<=90)
+   {
+        System.out.println(" Bien ");
+        
+   } else if(calif>=75 && calif<=85)
+   {
+        System.out.println("Suficiente");
+        
+   } else if(calif>=70 && calif<=74)
+   {
+        System.out.println("Apenas suficiente");
+        
+        
+   }
+   else if(calif>=50 && calif<=69)
+   {
+        System.out.println("Esfuerzate mas");
+        
+   }
+   
+   else
+   {
+         System.out.println("Tomar clases extra");
+     
+           }
+    
+        if (calif>= 70)  // condicion para las variables aprob y reprob
+        {
+        aprob++;
+        }else 
+        {
+        reprob++;
+        }    
+     
+       System.out.println("\n Desea ingresar otra calificacion ?");
+       select = leer.next().charAt(0);    // detecta solo la S
+        
+       suma+=calif; //acumula
+       cont++; // contador
+       
+   }while (select=='s' || select=='S');
+        
+        prom= suma/cont; //calculo todas las calif / contador del bucle
+  
+   
+        System.out.println(" El promedio total fue> "+prom);
+        System.out.println("Reprobados: "+reprob); //numero alumnos reprobados
+        System.out.println("Aprobados: "+aprob);  // numero alumnos aprobados 
+        
+  //va antes del break del case (n)
+
+    } //main
+}

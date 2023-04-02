@@ -1,0 +1,40 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+// autores Gutierrez Flores Kenneth && Ana Karina O.
+
+package com.mycompany.ejecicio2023;
+//import java.util.Scanner;
+import java.util.Random;
+
+/**
+ *
+ * @author conor
+ */
+//numero del 0 al 100 imprime 7 valores al azar y dice cual es menor y cual es mayor y la suma 
+public class Ejecicio2023 {
+
+    public static void main(String[] args ){
+        int num,suma=0,mayor=0,menor=0,cont; 
+         Random aleat = new Random();
+         num= aleat.nextInt(96)+5;
+         System.out.println(num+" ");
+       for(cont=1,suma=num, mayor=num, menor=num; cont<=6; cont++){
+         num= aleat.nextInt(96)+5;
+             System.out.println(num+" ");
+            suma+=num;
+            
+            if(num>mayor){
+             mayor=num;
+            } if(num<menor){
+            
+            }else{
+             menor=num;
+            }//else
+            
+         } // for
+         
+         System.out.println("\n\n  suma: "+suma+" \n mayor: "+mayor+"\n menor:"+menor);
+      
+    } //main
+}

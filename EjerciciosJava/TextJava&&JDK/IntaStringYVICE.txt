@@ -1,0 +1,27 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+// conversor de cadena a entero y vice
+package com.mycompany.ejecicio2023;
+import java.util.Scanner;
+
+/**
+ *
+ * @author conor
+ */
+public class Ejecicio2023 {
+
+    public static void main(String[] args) {
+     
+        int x=25,y;
+        String cod1, cod2="8947";
+        cod1 = String.valueOf(x);
+        System.out.println("Cad 1 : "+cod1);
+        y=Integer.parseInt(cod2);
+        System.out.println("y:100 " +(y+100));
+        System.out.println("y entre 2"+y/2);
+        
+     
+        
+    } //main
+}

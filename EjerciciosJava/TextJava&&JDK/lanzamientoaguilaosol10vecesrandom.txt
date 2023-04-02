@@ -1,0 +1,45 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+// autores Gutierrez Flores Kenneth && Ana Karina O.
+
+package com.mycompany.ejecicio2023;
+//import java.util.Scanner;
+import java.util.Random;
+
+/**
+ *
+ * @author conor
+ */
+public class Ejecicio2023 {
+
+    public static void main(String[] args ){
+        int x=1,lanz,contaa=0,contas=0; 
+         Random aleat = new Random();
+       do{
+        lanz=aleat.nextInt(2);
+        if(lanz==0){
+            System.out.println("Lanzamiento: "+":"+x+":"+"Aguila");
+            contaa++;
+        }
+        else{
+            System.out.println("Lanzamiento: "+":"+x+":"+"Sol");
+           contas++;
+        }
+                    
+       x++;
+       
+       }while(x<=10); 
+       
+        if(contaa>contas)
+          System.out.println("Ganedor Aguila: "+contaa+" veces");
+        else if(contaa<contas){
+          System.out.println("Ganador sol: "+contas+" veces");
+        }
+        else
+        {
+            System.out.println("Empate"+x);
+        }
+      
+    } //main
+}

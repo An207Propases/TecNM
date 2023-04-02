@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class Valbinar {   
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        double numero;
+        String cadena;
+        int entero;
+        float flotante;
+        char caracter;
+        short corto;
+        long largo;
+
+        System.out.println("Dame un numero double");
+        numero=sc.nextDouble();
+
+        System.out.println("converrsiones: ");
+        entero= (int) numero;
+
+        flotante= (float) numero;
+
+        caracter = (char ) entero;
+
+        corto = (short) numero;
+
+        largo =(long) numero;
+
+        System.out.println("Normal; "+numero);
+        System.out.println("int ; "+entero);
+        System.out.println("float; "+flotante);
+        System.out.println("char; "+caracter);
+        System.out.println("short; "+corto);
+        System.out.println("long; "+largo);
+    }
+}
+

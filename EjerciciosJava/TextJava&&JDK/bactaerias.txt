@@ -1,0 +1,35 @@
+\\programa detecta la reproduccion de una bacteria
+import java.util.Scanner;
+
+public class EjercicioNelly {
+    public static void main(String[] args) {
+        
+     int min,cont=0;
+     long bacteria=1;
+
+     Scanner sc=new Scanner(System.in); 
+
+     System.out.println("ingresar minuto");
+     min=sc.nextInt();
+    
+     if(min==0){
+        System.out.println("min: "+min+" bacteria: 1");
+    }else{
+
+        while (cont<=min) {
+    
+            System.out.print("\n min: "+cont +" bacteria:"+bacteria); 
+        
+         cont=cont+1;
+         bacteria=bacteria*2; 
+         }//while
+
+
+    }//else
+
+
+   
+     
+     
+    }
+}

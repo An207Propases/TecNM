@@ -1,0 +1,41 @@
+//programa de la pagina 185 del libro
+/* ingresar de manera repetitiva valores de 3 cifras de lo contrario volverlo a solicitar , indicar cada valor si es palindromo. terminar al ingresar el valor 999
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.mavenproject1;
+
+
+/**
+ *
+ * @author conor
+ */
+
+import java.util.Scanner;
+public class Mavenproject1 {
+     
+    public static void main(String[] args) {
+      int valmax,can=1;
+      
+      Scanner sc = new Scanner(System.in);
+        System.out.println("ingresar valor maxima");
+        valmax= sc.nextInt();
+        
+        for (int context = 1; context <=valmax;) {
+            
+            
+            
+            for (int contin = 1; contin <=can && context<=valmax; contin++) {
+                System.out.print(context+" ");
+                
+                
+                context=context+1;
+               
+            } // 2 do for
+             can=can+1;
+             System.out.println("");
+        }// q er for
+      
+    //code     
+    }// main
+}

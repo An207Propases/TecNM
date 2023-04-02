@@ -1,0 +1,49 @@
+
+/* ingresar de manera repetitiva valores de 3 cifras de lo contrario volverlo a solicitar , indicar cada valor si es palindromo. terminar al ingresar el valor 999
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.mavenproject1;
+
+
+/**
+ *
+ * @author conor
+ */
+
+import java.util.Scanner;
+public class Mavenproject1 {
+     
+    public static void main(String[] args) {
+      int cifra,cer,cul;
+      
+      Scanner sc = new Scanner(System.in);
+        
+      System.out.print("Ingresar valor");
+      cifra=sc.nextInt();
+      
+      while(cifra!=999){ 
+          
+          if(cifra>99 && cifra<1000){
+          
+              cer = cifra /100;
+              cul = cifra % 10;
+              
+                 if(cer==cul){
+                  System.out.println("Es palindromo "+cer);
+                 }
+                 else {
+                  System.out.println("No es palindromo "+cul);
+                  }
+              
+              
+      }else{
+          System.out.println("es menor de 3 cifras");
+      } //else    
+          System.out.println("Ingresar valor"); 
+          cifra=sc.nextInt();
+   } //ciclo while
+      
+    //code     
+    }
+}

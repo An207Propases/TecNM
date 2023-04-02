@@ -1,0 +1,43 @@
+  /**
+  *  nuevo ejercicio colores 
+  */
+  import java.util.Scanner; // lost
+  import java.io.IOException;
+
+ public class NellyProblems 
+    {
+ 
+    public static void main(String[] args) throws IOException
+      {
+        Scanner sc = new Scanner (System.in);
+      char c;
+       float monto, total=0;
+       
+       System.out.println("Ingresar monto");
+       monto = sc.nextFloat();
+      System.out.println("Ingresar color azul (a) rojo (r) blanca (b)"); 
+      c=(char)System.in.read();
+      System.in.read();
+      
+      switch (c) {
+        case 'a':
+          total=monto*0.8f;
+         break;
+         case 'r':
+           total=monto*0.7f;
+           break;
+        case 'b':
+          total=monto;
+        break; 
+        default:
+        System.out.println("no exisste ese color");
+          break;
+      }
+
+      if(c =='r' || c == 'a' || c=='b'){
+         System.out.println("debes pagar"+total);
+      }
+     
+
+      }
+ }

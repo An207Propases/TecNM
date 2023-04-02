@@ -1,0 +1,28 @@
+import java.util.Scanner;//
+//librerias ejercicsos libro cm a yardas 
+public class Prueb {
+    public static void main(String[] args){ 
+    real c,incre,fi;
+    real pulg,pie,yard;
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Inicio: ");
+    c=sc.next();
+    System.out.println("Incremnto: ");
+    incre=sc.next();
+    System.out.println("Final: ");
+    fi=sc.next();
+
+    System.out.println("Centimetros  Pulgadas    Pies     Yardas");
+
+    while (c<=fi) {
+        pulg = c/2.54;
+        pie = pulg /12;
+        yard = pie /3;
+        System.out.println(c,pulg,pie,yard);
+
+      c=c+incre;  
+    }
+
+        
+    }
+}

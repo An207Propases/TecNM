@@ -1,0 +1,38 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.ejecicio2023;
+import java.util.Scanner;
+
+/**
+ *
+ * @author conor
+ */
+public class Ejecicio2023 {
+
+    public static void main(String[] args) {
+        Scanner leer =new Scanner(System.in);
+        
+        int numero;
+         System.out.println("Ingresar valor positivo");
+        numero= leer.nextInt();
+        
+        System.out.println("Serie de Ulam"+numero);
+      
+          do{
+              
+            System.out.println(" "+numero);
+              if(numero % 2 ==0){
+              numero /=2; //numero s igual a numero entre dos
+              }else{
+                  numero *=3;
+                  numero ++;
+              } 
+            
+          }while(numero!=1);
+        
+        System.out.println(" 1");
+        
+    } //main
+}

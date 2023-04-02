@@ -1,0 +1,47 @@
+// problema  ralizar la inscripcion de N alumnos (N entre 5 y 50) (aleatorio entre 1200 y 1500 $) preguntar si si alcanza y dar vale (se adeudan para no dar monedas de 10 de mas)
+package problemaclase;
+
+import java.util.Scanner;
+import java.util.Random;
+
+/**
+ *
+ * @author conor
+ */
+public class Problemaclase {
+      
+        int numvales=0, monto, Numalumnos, Monedas, Billetes, pago, vale, cont,cambio; 
+      
+        
+        Random aleat = new Random();
+          Scanner leer = new Scanner(System.in);
+          
+        Numalumnos=aleat.nextInt(46)+5;
+        
+        for(cont=0;cont < Numalumnos; cont++){
+            
+            monto=aleat.nextInt(301)+1200;
+            
+            System.out.println(" Alumnos: "+(cont+1)+" monto: "+monto);
+           
+             do{
+                    System.out.println("Ingresar cantidad");  
+                    pago=leer.nextInt();
+            
+            }while(pago<monto);
+
+         cambio=pago-monto;
+         Billetes=(int)cambio/200; // calculo solo parte entera para poder ver cuantos necesitara 
+         cambio=cambio%200; //cantidad
+         Monedas=(int) cambio/10;
+         cambio=cambio%10; //la cantidad
+         vale=cambio; // en caso de no tener los 10 pesos necesarios
+         numvales=numvales+vale;
+            System.out.println("Tu camnio es: ("+Billetes+" )Billetes de (200) , "+" monedas de (10): "+Monedas+" Numero de vales:  "+vale);
+     
+        }
+        System.out.println("Adeudo vales: "+numvales);    
+        
+    }//main
+    
+}

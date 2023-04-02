@@ -1,0 +1,31 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.ejecicio2023;
+import java.util.Scanner;
+
+/**
+ *
+ * @author conor
+ */
+public class Ejecicio2023 {
+
+    public static void main(String[] args) {
+        Scanner leer =new Scanner(System.in);
+        
+        int numero;
+        String cad;
+         System.out.println("Ingresar cadenas de 0 y unos");
+         numero= leer.nextInt();
+         cad=leer.next();
+         
+         
+         numero =Integer.parseInt(cad);
+         
+        System.out.println("Cadena"+cad+"numero"+numero);
+      
+          
+        
+    } //main
+}

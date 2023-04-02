@@ -1,0 +1,35 @@
+import java.util.Scanner;//
+//librerias
+public class Prueb {
+    public static void main(String[] args){ 
+        char valor;
+        int total=0,valormayor=0,valormenor=0,sin=0;
+        Scanner sc=new Scanner(System.in); 
+    
+        do {
+            System.out.println("Ingresa caracter ");
+            valor= sc.next().charAt(0);
+
+            if(valor!='#'){
+
+            if(valor >= 'A' && valor <= 'Z'){
+                valormayor++; 
+                System.out.println("valores Mayores del abedecedario: "+valormayor);
+            }
+            else if(valor >='a' && valor <='z'){
+              valormenor++;
+              System.out.println("valor del abedecedario menor: "+valormenor);
+            }else{
+                sin++;
+                System.out.println("Caracter :"+sin);
+            }
+
+        }else{
+           total=valormayor+valormenor+sin; 
+          } 
+        } while (valor!='#');
+      System.out.println("totales ingresados antes del #"+total);
+        
+        
+    }
+}
